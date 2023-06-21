@@ -1,0 +1,23 @@
+/* kindselektor
+ein span, welches als Elternteil ein p hat*/
+p > span{
+    color: red;
+}
+/* Kinderselektor
+    ein strong, welches als Elternteil ein p hat
+*/
+p > strong {
+    color:green;
+}
+
+/*em, der einem p nachfolgt (egal auf welcher Ebene)*/
+/* Diese Eigenschaft färbt erstmal beide em in aqua*/
+p em {
+    color: aqua;
+}
+/* em, der einen p als direkten vorfahren hat. */
+/* Diese Eigenschaft färbt das untere em blau, da gleiche spezifizität
+aber weiter unten ("näher daran") */
+p > em {
+    color: blue;
+}

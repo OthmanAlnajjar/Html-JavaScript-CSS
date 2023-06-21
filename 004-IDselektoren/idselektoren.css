@@ -1,0 +1,8 @@
+/* id ist unique identifier und darf nur eimmal benutzt werden*/
+#warnung{
+    color: red;
+}
+
+#test{
+    color: aqua;
+}

@@ -1,0 +1,20 @@
+body{
+    color: aqua; background-color: black;
+    border:5px solid sandybrown ;
+  /*  border-style:dotted ;
+    border-color: saddlebrown;
+    border-width: 5px; */
+}
+h1{
+    color: lawngreen;background-color: rgb(87, 5, 87);
+    border: inherit;
+}
+span{
+    color: crimson;
+}
+p{
+    color: snow;
+}
+b{
+color: chocolate;
+}

@@ -1,0 +1,21 @@
+p{
+    background-color: silver;
+   
+ 
+}
+.floatleft{
+    
+    float:left;
+}
+
+.floatright{
+    
+    float:right;
+}
+
+/* .clear{
+    clear: both;
+} */
+img{
+    background-color: black;
+}

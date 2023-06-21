@@ -1,0 +1,37 @@
+span {
+    color: red;
+    background-color: green;
+    display: block;
+    text-align: center;
+}
+
+em {
+    color:blue;
+    background-color:yellowgreen;
+    width: 300px;
+    height: 300px; 
+    display:inline-block;
+}
+
+p {
+    background-color: grey;
+    /* display: inline; */
+}
+
+img {
+    background-color:black;
+    height: 100px;
+    display:block;
+}
+
+div {
+    text-align:center;
+}
+
+.block {
+    display: block;
+    text-align: center;
+}
+
+
+

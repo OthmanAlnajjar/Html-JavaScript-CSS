@@ -1,0 +1,48 @@
+/* root ist das Wurzelelement -
+ in einem Html-Dokument immer das Html */
+
+:root{
+    font-size: 30px;
+}
+
+/* leere Tags alle leeren Tags bekommen die eigenschaften
+ist auch möglich mit weiteren selektoren 
+zu benutzen, z.b:
+    .leer :empty {..}
+*/
+:empty{
+    background-color: blueviolet;
+    height: 30px;
+    width: 200px;
+}
+/* erstes Kind */
+.container :first-child {
+    font-weight: bold;
+}
+/* letztes Kind */
+.container :last-child {
+    text-decoration: underline;
+}
+/* n-tes kind */
+.container :nth-child(5) {
+color:pink;
+}
+/*alle gerade Kinder*/
+.container :nth-child(even){
+    color:green;
+}
+
+/* alle ungeraden kinder */
+.container :nth-child(odd){
+    color:blue;
+}
+/* alle Kinder als Funktion 
+(3*x+1) allgemein a*x+b wobei a und b beliebig wählbar sind
+*/
+.container :nth-child(3n+1){
+    text-decoration: line-through;
+}
+/* mit nth-last-child alles wie oben aber von hinten*/
+.container :nth-last-child(5) {
+    border: 2px solid grey;
+}

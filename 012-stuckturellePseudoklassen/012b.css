@@ -1,0 +1,12 @@
+/* Bereich 2: Pseudoelemente für Element-typen */
+
+.container :first-of-type{
+    color: red;
+}
+.container :first-child{
+    color: greenyellow;
+}
+
+.container ::first-letter{
+    text-decoration: overline;
+}

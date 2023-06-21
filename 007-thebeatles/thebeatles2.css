@@ -1,0 +1,79 @@
+/* nachfolgeselektor */
+
+ul li{
+    color: aqua;
+}
+ ol li {
+    color: blue;
+}
+
+ul > a  {color: aqua;
+
+}
+a:visited{
+    color: aqua;
+}
+a:hover{
+    color: red;
+    font-size: 16;
+}
+
+
+
+/* kindselektor */
+
+
+/* ul > li{
+    color: aqua;
+}
+ol > li {
+    color: blue;
+} */
+
+/* idselektor
+#li1 { color: aqua;}
+#li2 { color: aqua;}
+#li3 { color: aqua;}
+#li4 { color: aqua;}
+
+#li5 { color: blue;}
+#li6 { color: blue;}
+#li7 { color: blue;}
+#li8 { color: blue;}
+#li9 { color: blue;} */
+
+
+
+
+
+
+/* geschwester selektor
+p ~ ul li{
+    color: aqua;
+}
+p ~ ul li {
+    color: blue;
+} */
+
+/* class selektor
+.ulli{
+    color: aqua;
+}
+.olli{
+    color: blue;
+} */
+
+
+
+
+/* id selektor
+#li1 { color: aqua;}
+#li2 { color: aqua;}
+#li3 { color: aqua;}
+#li4 { color: aqua;}
+
+#li5 { color: blue;}
+#li6 { color: blue;}
+#li7 { color: blue;}
+#li8 { color: blue;}
+#li9 { color: blue;} */

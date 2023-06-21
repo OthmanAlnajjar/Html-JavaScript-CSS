@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+div {
+    height: 300px;
+    width: 300px;
+    background-color: aquamarine;
+    border: 20px solid blue;
+    /* Margin liegt außerhalb von dem Element: Außenabstand */
+    margin: 50px /* alle vier seiten gleich */;
+    margin: 50px 100px; /* 50px oben und unten, 100px links und rechts */
+    margin: 50px auto; /* 50px oben und unten, horizontal zentriert */
+    margin: 50px 20px 80px 10px; /* im Uhrzeigersinn */
+    margin: 50px 100px 20px; /* 50px oben, 100px horizontal (links und rechts) 20px unten */
+}
+
+#box {
+    
+    padding: 50px; /* 50px ist der Text vom Rand entfernt, aber die 50px kommen auf allen vier Seiten dazu */
+    border: 20px solid blue;
+   
+}

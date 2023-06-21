@@ -1,0 +1,26 @@
+/* Einfacher Klassenselektor 
+    dieser kann in jedem Tag mit class="warnung" benutzt werden*/
+    .warnung {
+        color: red;
+    }
+    
+    /* Einfacher Klassenselektor */
+    .wichtig {
+        font-weight: bold;
+        color: green;
+    }
+    
+    /* mischen von Typ- und Klassenselektor */
+    
+    /* Diese Eigenschaften gelten zusätzlich, wenn
+        .warnung in einem p benutzt wird */
+    /* Außerdem hat die Farbe vorrang, weil der Selektor spezifischer ist
+        p.warnung ist spezifischer als .warnung
+        Allgemeine Faustregel (je spezifischer, desto größer der Vorrang)
+            Selbst, wenn .warnung darunter stehen würde, dann wäre die
+            Farbe trotzdem blau */
+    p.warnung {
+        text-decoration: underline;
+        color: blue;
+    }
+    

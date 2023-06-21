@@ -1,0 +1,13 @@
+/* Geschwisterselektor
+selektiert werden alle strong, die einem em nachfolgen auf gleicher Ebene*/
+em ~ strong{
+    color: red;
+}
+
+/**/
+p ~ strong {
+    text-decoration: underline;
+}
+html > head ~ body p ~ strong ~ em {
+    color: green;
+}
