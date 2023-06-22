@@ -1,0 +1,74 @@
+﻿div {
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    margin: 20px 0;
+}
+
+.test01 {
+    background-color: aqua;
+}
+
+.test02 {
+    background-image: url("melman.png");
+}
+
+.test03 {
+    background-image: url("melman.png");
+    background-repeat: repeat-x;
+}
+.test04 {
+    background-image: url("melman.png");
+    background-repeat: repeat-y;
+}
+
+.test05 {
+    background-image: url("melman.png");
+    background-repeat: no-repeat;
+}
+
+/* erster Wert ist die horizontale Ausrichtung: 
+    left    center  right
+   zweiter Wert ist die vertikale Ausrichtung: 
+    top
+    center
+    bottom
+    */
+.test06 {
+    background-image: url("melman.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.test07 {
+    background-image: url("melman.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.test08 {
+    background-image: url("melman.png");
+    background-repeat: no-repeat;
+    background-position: right 50px bottom 100px;
+}
+
+.test09 {
+    background-image: url("melman.png");
+    background-attachment:fixed;
+    
+}
+
+/* Kurzschreibweise:
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+     */
+    
+
+.test10 {
+    background: pink url("melman.png") repeat-y fixed left 20px top 50px;
+}
+
+

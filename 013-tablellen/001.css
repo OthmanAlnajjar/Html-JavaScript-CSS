@@ -1,0 +1,18 @@
+table, td {
+    padding: 5px;
+    border: 1px solid gray;
+/*
+    Basis-eigenschaften(css):*/
+    border-collapse: separate; 
+    /*jede Zelle hat einen eigenen Rahmen
+    zwischen den Zellen ist Platz (spacing genannt) 
+    Demnach funktioniert border-spacing auch nur bei seperate */
+
+    border-collapse: separate; 
+    /*bedeutet, dass die Zellen einen
+    gemeinsamen Rand besitzen*/
+
+    border-spacing: 10px; /* das würde benutzt nur wenn 
+    border-collapse: separate; ist*/
+}
+

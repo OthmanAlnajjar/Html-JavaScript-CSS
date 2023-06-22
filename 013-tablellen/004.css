@@ -1,0 +1,26 @@
+table{
+    border: 1px solid black;
+    width: 800px;
+}
+
+col.odd{
+    background-color: aqua;
+}
+
+col.even{
+    background-color: coral;
+}
+col.werktag{
+    background-color: coral; 
+}
+col.wochenende{
+    background-color: aqua;
+}
+
+td:nth-of-type(7), td:nth-of-type(8){
+    text-align: right;
+}
+
+[scope] {
+    text-decoration: underline;
+}

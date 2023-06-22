@@ -1,0 +1,47 @@
+body{
+    background: #000;
+}
+div{box-sizing: border-box;
+    display: inline-block;
+    width: 35%;
+    height: 300px;
+
+}
+#vordefiniert{
+    
+    background-color: gainsboro; /* siehe selfhtml*/
+}
+#hexAngabe{
+   
+    background-color: #afffff;/* beggint mit # 
+    erste zweu Zwuffern: rot
+    Ziffer 3 und 4: grün
+    Ziffer 5 und 6: blau
+    Ziffern: 0, 1, 2,....9, a, b, c, d, e, f 
+        Anzahl der fabkombination pro farbe: 16*16=256
+        Bei drei farben= 256 * 256 * 256
+        */
+    
+}
+#rgb{
+  
+    background-color: rgb(55, 0, 255);
+}
+#rgba{
+  
+    background-color: rgba(255, 0, 234,0.5);
+}
+#hsl{
+ /*   h: hsl
+      s: saturation Sättigung
+      l: lightness hellighkeit */
+   
+    background-color:hsl(50, 50%, 50%)
+}
+#hsla{
+    /*   h: hsl
+         s: saturation Sättigung
+         l: lightness hellighkeit */
+      
+       background-color:hsla(50, 50%, 50%,0.5)
+   }

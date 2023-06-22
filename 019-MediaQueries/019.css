@@ -1,0 +1,28 @@
+/* Media-Queries: Fragen Eigenschaften eine Medius ab, i.d.R. Eigenschaften des viewports
+                    und schalten Regeln ein/aus */
+.test {
+    width: 600px;
+    height: 600px;
+    background-color: gray;
+}
+@media(min-width:800px){
+    .test {
+        width: 300px;
+        height: 300px;
+       
+    }
+}
+@media(max-width: 500px){
+    .test {
+        width: 400px;
+        height: 400px;
+        background-color: green;
+    }
+}
+@media(width:800){
+    .test {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+    }
+}

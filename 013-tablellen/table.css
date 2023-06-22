@@ -1,0 +1,52 @@
+table{
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+table th{
+    border: 2px solid gray;
+    width: 150px; 
+}
+table td{
+    border: 2px solid lightgray;
+    width: 150px; 
+    height: 120px;
+    padding: 0;
+    background-color: white;
+    vertical-align: top;
+    
+}
+caption{
+    font-size:large;
+    text-align: left;
+}
+table th {background-color: lightgray;
+}
+.firsttr td{
+    color: white;
+background-color: gray;
+}
+.firsttr td:nth-of-type(n+6){
+    color: black;
+    background-color: white;
+}
+
+.lasttr td{
+    color: white;
+    background-color: gray;
+    }
+tfoot tr  :first-of-type{
+    color: black;
+      background-color: white;
+    }
+p{
+    margin-left: 20px;
+    color: lightseagreen;
+}
+#td12{
+    background-color: lightblue;
+    border: 3px solid lightseagreen;
+    
+}
+{
+    background-color: brown;
+}

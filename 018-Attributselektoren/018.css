@@ -1,0 +1,39 @@
+/* Ein Element mit einem bestimmten Attribut*/
+[title]{
+    background-color: rebeccapurple;
+}
+
+/* Ein Element mit einem bestimmten Attribut, welches einen bestimmten Wert hat*/
+[title="Ich bin ein Berliner Anker"]{
+    color: wheat;
+}
+
+/* Ein ELement mit einem bestimmten Attribut, das einen bestimmten Teilinhalt in seinen Werten haben muss */
+[class~="hallo"] {
+    display:block;
+}
+
+/* Ein ELement mit einem bestimmten Attribut, das irgendwo einen bestimmten Teilinhalt haben muss */
+[id*="BinEin"]{
+    height: 100px;
+}
+
+/* Ein Element, das in einem Attribut mit einem bestimmten Wert beginn */
+[title^="Ich bin"]{
+    width: 400px;
+}
+
+/* Ein Element, das in einem Attribut mit einem bestimmten Wert endet */
+[title$="Berliner Anker"]{
+   border: 10px solid red;
+}
+
+/* Ein Element, das in einem Attribut entweder genau einen Wert beginnt oder einen Wert beginnt, dem ein "-" (Bindestrich) folgt. */
+[class|="breite"]{
+    text-decoration: none;
+}
+
+/* das i ist eine Erweiterung und kann hinter jedem Attributselektor verwendet werden. */
+[id*="anker" i]{
+    text-align: center;
+}

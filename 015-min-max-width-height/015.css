@@ -1,0 +1,46 @@
+/*CSS min-width Property
+Die min-widthEigenschaft definiert die minimale Breite eines Elements.
+Wenn der Inhalt kleiner als die Mindestbreite ist, wird die Mindestbreite angewendet.
+Wenn der Inhalt größer als die Mindestbreite ist, min-widthhat die Eigenschaft keine Auswirkung.
+Hinweis: Dadurch wird verhindert, dass der Wert der width- Eigenschaft kleiner als wird min-width.
+*/
+html, body{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+img{
+    display: block;
+}
+
+.width{
+    width: 40%;
+    height: auto;
+}
+/* 
+height funktioniert nicht, wenn html und body nicht gegeben sind wie oben!*/
+.height{
+    height: 30%;
+    width: auto;
+}
+/* min-width: das erste Elemet darf nicht schmaler als 400px
+    in der Breite werden */
+#test01{
+min-width: 400px;
+}
+/* max-width: das zweite Elemet darf nicht breiter als 400px
+    in der Breite werden */
+#test02{
+    max-width: 400px;
+    }
+/* max-height: das drite Elemet darf nicht maximal als 100px hoch
+    sein */
+#test03{
+    max-height: 100px;
+}
+/* max-height: das vierte Elemet darf nicht mindestens als 100px hoch
+    sein */
+#test04{
+      max-height: 100px;
+    }

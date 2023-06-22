@@ -1,0 +1,20 @@
+ body{
+    margin: 0;
+    background-color: gray;
+ }
+ .tabledata ,.tabledata td ,.tabledata caption  {
+    border: 5px solid violet;
+    border-collapse: collapse;
+    text-align: right;
+    padding: 10px;
+    
+
+}
+.tabledata {
+   
+    margin: auto;
+    width: 20%;
+    background-color: black;
+    color: white;
+    
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="001.css">
+    <title>table</title>
+</head>
+<body>
+<!--
+    Tabellen sollten heutzutage nicht mehr zum Positionieren 
+    benutzt werden, sondern nur noch im semantischen Sinne,
+    d.h. wir stellen mit einer Tabelle NUR tabellarische Daten dar.
+    wenn tabellarische Darstellung im Sinne von design, dann über ein grid-system 
+    
+    Basis-Elemente:
+        tabel - Tabellen-Tag        - leitet die Tabelle ein
+        tr    - Zeile einer Tabelle - table row
+        th    - Kopfzelle           - Table head
+        td    - Inhaltszelle        - table data 
+        tbody - Umfasst alle tr, td - Tabelleninhalts
+
+-->
+<!--
+    HTML-Tabellen können Zellen haben, die sich 
+    über mehrere Zeilen und/oder Spalten erstrecken.
+    1. HTML-Tabelle - Colspan: damit sich eine Zelle über mehrere
+    Spalten erstreckt, verwenden wir das colspan Attribut.
+    z.b:
+    2. HTML Table   - Rowspan: Damit sich eine Zelle über mehrere 
+    Zeilen erstreckt, verwenden wir das rowspanAttribut.
+
+
+-->
+
+<table>
+    <tbody>
+         <tr>
+             <td>td 01</td>
+             <td>td 02</td>
+             <td>td 03</td>
+             <td>td 04</td>
+             <td>td 05</td>
+         </tr>
+         <tr>
+             <td>td 06</td>
+             <td>td 07</td>
+             <td>td 08</td>
+             <td>td 09</td>
+             <td>td 10</td>
+         </tr>
+    </tbody>
+</table>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.datatable {
+    border-spacing: 20px;
+    border: 1px solid red;
+}
+
+.datatable th, .datatable td {
+    border: 1px solid red;
+
+}
+
+.datatable caption{
+    caption-side: bottom;
+    text-align: center;
+}

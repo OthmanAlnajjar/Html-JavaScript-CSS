@@ -1,0 +1,35 @@
+/* 
+PseudoElemente
+keine wirklichen Elemente, die ich in html einfüge, sondern
+sie werden in css definiert und im Nachhinein in das dokument
+eingefügt
+*/
+
+#pseudo{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+
+/* die beiden Elemente after und before kann ich in ein 
+    beliebiges html-Element hineinpacken.
+    heir konkret: before wird vor ich ..... einfügt
+                    after word nach ..... vom div eingefügt
+*/
+/*zuerst wird html dargestellt, dann die beiden Pseudoelemente,
+aber erst im Browser.*/
+
+/* Beide Elemente können wie bisher beliebig mit Eigenschaften
+    definiert werden.
+    Eine Eigenschaft gilt (nur) für die beiden::content*/
+ 
+#pseudo::before{
+    content: "Ich komme aus dem CSS, bin gar nicht da, aber stehe trotzdem da";
+    display: block;
+    background-color: brown;
+}
+#pseudo::after{
+    content: "ich bin after und stehe am ende";
+    display: block;
+    background-color: gray;
+}

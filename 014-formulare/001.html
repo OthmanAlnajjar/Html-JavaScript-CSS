@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+</head>
+<body>
+    <h1>Formular-Tags</h1>
+    <!-- action ist das Zieldokument, d.h. das Dokument mit dem die Daten verarbeitet werden sollen. -->
+    <form action="001.html" method="get">
+        <h2>Inputs für Text</h2>
+        <!-- self-closing-tags -->
+
+        <h3>Input-Type: text</h3>
+        <!-- für beliebigen Text -->
+        <input type="text" name="vorname" placeholder="Vornamen eingeben">
+
+        <h3>Input-Type: password</h3>
+        <!-- der Inhalt wird ausgesternt und ist damit beim Eingeben nicht sichtbar -->
+        <input type="password">
+
+        <h3>Input-Type: search</h3>
+        <!-- beim Schreiben in das Feld erscheint rechts ein Lösch X -->
+        <input type="search">
+
+        <!-- 
+            für die nächsten drei Elemente kann gelten:
+            1. semantische Bedeutung
+            2. Bedeutend für ein Suchmaschinen - Ranking
+            3. email hat eine ganz leichte Standard-Validierung
+            4. Bedeutung für mobile Geräte, weil sich das Tastenfeld ändert
+            
+         -->
+
+        <h3>Input-Type: email</h3>
+        <input type="email">
+
+        <h3>Input-Type: tel</h3>
+        <input type="tel">
+
+        <h3>Input-type: url</h3>
+        <input type="url">
+
+        
+        <h2>Inputs für Datums- und Zeitangaben</h2>
+
+        <h3>Input-Type: date</h3>
+        <input type="date">
+
+        <h3>Input-Type: time</h3>
+        <input type="time">
+
+        <h3>Input-Type: week</h3>
+        <input type="week">
+
+        <h3>Input-Type: month</h3>
+        <input type="month">
+
+        <h3>Input-Type: datetime-local</h3>
+        <input type="datetime-local">
+
+
+        <h2>Inputs für Zahlen</h2>
+
+        <h3>Input-Type: number</h3>
+        <input type="number" name="alter"> <!-- beim Abschicken wird das Paar "alter"/33 abgeschickt -->
+
+        <h3>Input-Type: range</h3>
+        <input type="range" min="2" max="10" step="2">
+
+
+        <h2>Sonstige Inputs</h2>
+
+        <h3>Input-Type: color</h3>
+        <!-- color-Fenster/Picker -->
+        <input type="color">
+
+        <h3>Input-Type: hidden</h3>
+        <!-- sieht der Benutzer nicht, aber es ist vorhanden 
+             benötigte Daten werden mit dem Fomular mitgeschickt
+        -->
+        <input type="hidden" value="50">
+
+
+        <h2>Inputs für Auswahlen</h2>
+        
+        <h3>Input-Type: radio</h3>
+        <input type="radio" name="geschlecht" value="0">weiblich
+        <input type="radio" name="geschlecht" value="1">männlich
+        <input type="radio" name="geschlecht" value="2" checked>divers
+        <!-- bei der Auswahl vom Geschlecht wird das Name/Value - Paar übergeben: z.B. "geschlecht"/0 bei weiblich 
+             Boolsches Attribut: checked bedeutet, dass dieses Element vorausgewählt ist
+        -->
+
+        <h3>Input-Type: checkbox</h3>
+        <input type="checkbox" name="sportart" value="Tennis" checked>Tennis
+        <input type="checkbox" name="sportart" value="Schach" checked>Schach
+        <input type="checkbox" name="sportart" value="Billard">Billard
+        <input type="checkbox" name="sportart" value="E-Sports">E-Sports
+        <input type="checkbox" name="sportart" value="Handball">Handball
+
+        <h3>Input-Type: button submit reset</h3>
+        <input type="button" name="fruehling" value="Drück mich">
+        <input type="submit" name="abschicken" value="Rechne das"> <!-- Absenden der Formulardaten (an action) -->
+        <input type="reset" value="Reset bitte">  <!-- Löschen aller Formulardaten -->  
+
+        <h2>Button</h2>
+        <button type="submit" name="send" value="Los">Absenden</button>
+        <button type="reset">Lösch meine Einträge</button>
+        <button type="button" name="zahl" value="eins">1</button>
+        <button type="button" name="zahl" value="zwei">2</button>
+        <button type="button" name="zahl" value="drei">3</button>
+        <button type="button" name="operator" value="Addition">+</button>
+        <!-- 
+            Nachteil von Input: Der value wird auf den Button 
+            geschrieben, bei button sind value und Beschriftung 
+            unterschiedlich.
+            
+            Nachteil von Input: selfclosing, beim Button dagegen 
+            kann ich alle bekannten Elemente einfügen.
+         -->
+
+        <h2>Texteingabe</h2>
+        <!--  -->
+        <textarea name="geschichte" id="geschichte" placeholder="Geschichte ohne Inhalt"></textarea>
+        
+        <h2>Eingabeauswahl: select</h2>
+
+        <!-- 
+        <select>: es ist ein scroll-list 
+        attribut <select Multiple>: ist Mehrfachauswahl mit voll 
+        angezeigter Liste und STRG bzw. Shift zur Mehrfachauswahl 
+        size="X" bestimmt die sichtbaren Elemente der Liste 
+    -->
+        <select name="auto" size="3" multiple>
+            <option value="1">Opel</option>
+            <option value="2">VW</option>
+            <option value="3">Peugeot</option>
+            <option value="4">BMW</option>
+            <option value="Mercedes">Mercedes</option> 
+        </select>
+        <br><br><br><br><br><br><br><br><br><br>
+
+    </form>
+</body>
+</html>

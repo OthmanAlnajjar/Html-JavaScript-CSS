@@ -1,0 +1,80 @@
+/*Stylesheet für Grid*/
+*{
+    margin: 0;
+    
+    box-sizing: border-box; /* diese Eigenschaft bewirkt, dass Inhalt, padding und
+    border in der angegebenen gesamtbreite schon enthalten sind
+    dadurch kann padding und border beliebig eingesetzt werden*/
+}
+
+/* keine Höhe, weil die höhe durch den Inhalt bestimmt wird */
+.container{
+    width: 95%;
+    background-color: lightsalmon;
+    margin: 0 auto;
+}
+/* Rows dienen ausschließlich dazu, dass die Columns richtig floaten */
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.row{
+    background-color: lightcoral;
+    border: 1px solid black;
+    
+}
+
+[class*="col-"]{
+    float:left;
+}
+/* Temporär*/
+[class*="col-"]{
+    background-color: violet;
+    border: 1px solid black;
+}
+.col-1{
+ width: 16.666%;
+}
+.col-2{
+ width: 33.333%;
+}
+.col-3{
+ width: 50%;
+}
+.col-6{
+ width: 100%;
+}
+/*bis hier hin ist das grid system flexibel und skalierbar
+aber noch nicht responsive */
+
+/* breakpoints abhängig von den Geräten
+
+480  (Smartphone und alles was kleiner ist)
+768  (Tablet im Hochformat)
+1024 (Tablet im Querformat)
+alles was größer ist (Desktop oder mehr)
+    */
+
+@media(max-width: 1024px){
+    .col-1{
+      width: 33.333%;
+    }
+}
+@media(max-width: 1024px){
+    .col-1{
+      width: 50%;
+    }
+    .col-2{
+      width: 100%;
+    }
+    .col-3{
+      width: 100%;
+    }
+       
+}
+@media(max-width: 1024px){
+    .col-1{
+      width: 100%;
+    }
+}

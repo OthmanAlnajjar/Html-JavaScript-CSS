@@ -1,0 +1,18 @@
+.container {
+    background-color: gray;
+
+}
+
+img {
+    width: 200px;
+    float: right;
+}   
+p {
+    background-color: red;
+   
+}
+.clearfix::after {
+    content: ""; /* Garantiert, das kein Inhalt => höhe:0, was wir ja wollen*/
+    clear: both; /* es soll kein element recht oder links stehen */
+    display: block; /*nimmt die gesamte Breite des Elternelements ein*/
+}

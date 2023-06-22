@@ -1,0 +1,40 @@
+
+
+ 
+table {
+    width: 50%;
+    border: none;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 155px;
+    
+  
+}
+table td, table th{
+    padding: 10px;
+}
+
+thead{
+    
+    color: black;
+    background-color: gray;
+    
+}
+caption{
+    padding: 10px;
+    border-top: solid 1px lightgray ;
+    text-align: left;
+    color: black;
+    font-size:x-large;
+}
+
+
+tfoot tr:first-child{
+    border-top: solid 1px black ;
+    font-size:large;
+    font-weight: bold;
+}
+
+tr:nth-child(even){
+    background-color: lightgray;
+}

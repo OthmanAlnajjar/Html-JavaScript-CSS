@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="002.css">
+    <title>table</title>
+</head>
+<body>
+<!--
+    Tabellen sollten heutzutage nicht mehr zum Positionieren 
+    benutzt werden, sondern nur noch im semantischen Sinne,
+    d.h. wir stellen mit einer Tabelle NUR tabellarische Daten dar.
+    wenn tabellarische Darstellung im Sinne von design, dann über ein 
+    grid-system 
+    
+    Basis-Elemente:
+        tabel   - Tabellen-Tag        - leitet die Tabelle ein
+        tr      - Zeile einer Tabelle - table row
+        th      - Kopfzelle           - Table head
+        td      - Inhaltszelle        - table data 
+        tbody   - Umfasst alle tr, td - Tabelleninhalts
+        thead   - Kopfbereich         - mit eigenen th
+        th      - table head          - nur für kopfbereich
+        tfoot   - fussbereich mit td  - fußbereich mit td
+        caption - beschriftung 
+-->
+<table class="datatable">
+    <caption summary="Hier soll eine zusammenfassende übericht
+    über den Tabelleninhalt stehen - nur für screenreader">Übersicht Über....</caption>
+    <thead>
+    <th>Überschrift 1</th>
+    <th>Überschrift 2</th>
+    <th>Überschrift 3</th>
+    <th>Überschrift 4</th>
+    <th>Überschrift 5</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td>Nummer 01</td>
+             <td>Nummer 02</td>
+             <td>Nummer 03</td>
+             <td>Nummer 04</td>
+            <td>Nummer 05</td>
+         </tr>
+         <tr>
+             <td>Nummer 06</td>
+             <td>Nummer 07</td>
+             <td>Nummer 08</td>
+              <td>Nummer 09</td>
+             <td>Nummer 10</td>
+         </tr>
+    </tbody>
+    <tfoot>
+        <td>fuss 1</td>
+        <td>fuss 2</td>
+        <td>fuss 3</td>
+        <td>fuss 4</td>
+        <td>fuss 5</td>
+    </tfoot>
+</table>
+    
+
+
+</body>
+</html>

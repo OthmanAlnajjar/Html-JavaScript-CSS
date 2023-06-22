@@ -1,0 +1,16 @@
+table{ 
+    text-align: center;
+    border: 5px solid purple;
+    border-collapse: collapse;  
+}
+td{
+    border: 5px solid black;
+    width: 200px;
+    height: 250px;
+}
+th{
+    border: 5px solid coral;
+    width: 200px;
+
+}
+
